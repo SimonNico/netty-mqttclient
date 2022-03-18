@@ -27,11 +27,11 @@ mqtt.isReconnect=true<br>
 import com.nmqtt.interfaces.MqttClientCallBack;
   
 public class ClientCallBack implements MqttClientCallBack {
-
+    @Override
     public void afterReconnect() {
         System.out.println("reconnect sucessfully");
     }
-
+    @Override
     public void onLostConnection(Throwable throwable) {
         System.out.println("miss connection");
     }
@@ -44,6 +44,7 @@ import io.netty.buffer.ByteBuf;
 import io.netty.util.CharsetUtil;
 
 public class ClientHandler implements MqttHandler {
+    @Override
     public void onMessage(String s, ByteBuf byteBuf) {
         String str=byteBuf.toString(CharsetUtil.UTF_8);
         System.out.println("topic:"+s);
@@ -53,7 +54,7 @@ public class ClientHandler implements MqttHandler {
 ```
 
 ```Java
- @Autowired
+    @Autowired
     private NettyMqttClient nettyMqttClient;
 
     public void  ClientStart() throws ExecutionException, InterruptedException {
