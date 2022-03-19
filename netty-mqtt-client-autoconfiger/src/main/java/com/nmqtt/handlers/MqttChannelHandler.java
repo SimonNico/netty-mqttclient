@@ -4,7 +4,7 @@ import com.nmqtt.NettyMqttClient;
 import com.nmqtt.utils.MqttConnectResult;
 import com.nmqtt.utils.MqttPendingSubscription;
 import com.nmqtt.utils.MqttPendingUnsubscription;
-import com.nmqtt.utils.MqttSubScription;
+import com.nmqtt.models.MqttSubScription;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

@@ -7,6 +7,7 @@ import com.nmqtt.handlers.MqttPingHandler;
 import com.nmqtt.interfaces.MqttClientCallBack;
 import com.nmqtt.interfaces.MqttHandler;
 import com.nmqtt.models.MqttConfigProperties;
+import com.nmqtt.models.MqttSubScription;
 import com.nmqtt.utils.*;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
